@@ -4,7 +4,7 @@ const brands = [
   {
     name: 'AllTrails',
     logo: '/logos/alltrails.png',
-    url: 'https://www.alltrails.com/',
+    url: 'https://www.instagram.com/p/DVgqmaJgQJT/?hl=en&img_index=2',
   },
   {
     name: 'Black Diamond',
