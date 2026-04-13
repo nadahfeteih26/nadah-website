@@ -3,6 +3,7 @@ import SectionHeading from '../ui/SectionHeading';
 import TechVineDivider from '../ui/TechVineDivider';
 import MawaCollective from './MawaCollective';
 import TravelAwards from './Awards';
+import BrandAmbassadors from './BrandAmbassadors';
 
 const ExpeditionGlobe = lazy(() => import('./ExpeditionGlobe'));
 
@@ -19,6 +20,8 @@ export default function TravelPage() {
         <Suspense fallback={<div className="h-96 flex items-center justify-center text-on-surface-muted">Loading globe...</div>}>
           <ExpeditionGlobe />
         </Suspense>
+        <TechVineDivider />
+        <BrandAmbassadors />
         <TechVineDivider />
         <TravelAwards />
       </div>
