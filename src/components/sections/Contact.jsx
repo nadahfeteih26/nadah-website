@@ -75,13 +75,21 @@ export default function Contact() {
 
               {/* Email */}
               <div className="mt-0">
-                <p className="text-xs text-on-surface-muted uppercase tracking-widest mb-2">Email</p>
-                <a
-                  href="mailto:nadahfeteih@gmail.com"
-                  className="text-on-surface font-heading text-lg italic hover:text-primary transition-colors"
-                >
-                  nadahfeteih@gmail.com
-                </a>
+                <p className="text-xs text-on-surface-muted uppercase tracking-widest mb-3">Email</p>
+                <div className="space-y-1.5">
+                  <p className="text-on-surface-muted text-sm">
+                    Personal:{' '}
+                    <a href="mailto:nadahfeteih@gmail.com" className="text-on-surface font-heading text-lg italic hover:text-primary transition-colors">
+                      nadahfeteih@gmail.com
+                    </a>
+                  </p>
+                  <p className="text-on-surface-muted text-sm">
+                    Business:{' '}
+                    <a href="mailto:nadah@mawacollective.com" className="text-on-surface font-heading text-lg italic hover:text-primary transition-colors">
+                      nadah@mawacollective.com
+                    </a>
+                  </p>
+                </div>
               </div>
             </div>
           </ScrollReveal>
