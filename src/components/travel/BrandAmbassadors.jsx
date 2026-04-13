@@ -27,16 +27,17 @@ const brands = [
 export default function BrandAmbassadors() {
   return (
     <div className="mb-16 md:mb-24">
-      <ScrollReveal>
+      <ScrollReveal className="mb-12 md:mb-16 text-center">
         <p className="text-secondary-dark font-medium text-sm tracking-widest uppercase mb-2">
           Brand Ambassador
         </p>
-        <h3 className="font-heading text-2xl md:text-3xl text-on-surface mb-3 italic">
+        <h3 className="font-heading text-3xl md:text-4xl lg:text-5xl text-on-surface mb-4 italic">
           Partnered Brands
         </h3>
-        <p className="text-on-surface-muted leading-relaxed max-w-2xl mb-8">
+        <p className="text-lg md:text-xl text-on-surface-muted max-w-2xl mx-auto">
           Work with leading outdoor and fitness brands as a trusted brand ambassador and storyteller.
         </p>
+        <div className="mt-4 h-0.5 w-16 rounded-full bg-secondary-dark mx-auto" />
       </ScrollReveal>
       <div className="grid grid-cols-2 md:grid-cols-4 gap-4 md:gap-6">
         {brands.map((brand, i) => (
