@@ -1,25 +1,35 @@
 export const industryData = {
-  role: 'Software Engineer',
-  company: 'Meta',
-  description:
-    'Building products that serve billions of users worldwide. Worked on product features with the faith team, creating tools that foster meaningful connections across diverse communities.',
-  videoUrl: 'https://www.youtube.com/embed/DEtKYkcL-qg',
-  videoTitle: 'Faith Team Product Features at Meta',
+  roles: [
+    {
+      company: 'Etsy',
+      role: 'Senior Privacy Engineer',
+      description:
+        'Owned and scaled the Safety by Design program, partnering with Legal, Risk, Security, and product teams across the company to embed privacy and user safety into all projects.',
+      url: 'https://www.linkedin.com/in/nadahfeteih/',
+    },
+    {
+      company: 'Meta',
+      role: 'Senior Software Engineer',
+      description:
+        'Built faith-based features, led privacy wave workstreams across Instagram, developed a privacy-first logging framework, and drove vulnerability detection in third-party libraries for Messenger.',
+      url: 'https://www.linkedin.com/in/nadahfeteih/',
+    },
+  ],
 };
 
 export const ethicsData = {
   fellowships: [
     {
       institution: 'Berkman Klein Center at Harvard',
-      role: 'Fellow',
+      role: 'Employee Fellow',
       description:
-        'Research fellow exploring the intersection of technology, policy, and human rights at one of the world\'s leading internet and society research centers.',
+        'Conducted research and published a white paper on Trust & Safety in the Majority World. Founding member of the Applied Social Media Lab (ASML), leading the first workstream to scope out lab projects while supporting the hiring of engineers and product managers.',
     },
     {
       institution: 'Goldman School of Public Policy, UC Berkeley',
-      role: 'Fellow',
+      role: 'Tech Policy Fellow',
       description:
-        'Policy fellow examining how emerging technologies shape public interest and governance in the digital age.',
+        'Examined how emerging technologies shape public interest and governance in the digital age, contributing to policy discussions on responsible technology.',
     },
   ],
 };

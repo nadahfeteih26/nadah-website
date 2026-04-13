@@ -52,10 +52,10 @@ export default function Footer() {
               Whether you're looking for coaching, collaboration, or just want to chat about mountains and tech — I'd love to hear from you.
             </p>
             <a
-              href="mailto:nadah@hey.com"
+              href="mailto:nadahfeteih@gmail.com"
               className="inline-block px-8 py-3.5 bg-secondary text-secondary-dark font-semibold rounded-md hover:bg-secondary-dim transition-colors mb-12"
             >
-              Let's Chat
+              Let's Connect
             </a>
 
             <div className="flex justify-center gap-5">

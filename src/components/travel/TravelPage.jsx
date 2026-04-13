@@ -1,14 +1,14 @@
+import { lazy, Suspense } from 'react';
 import SectionHeading from '../ui/SectionHeading';
 import TechVineDivider from '../ui/TechVineDivider';
 import MawaCollective from './MawaCollective';
-import Athletics from './Athletics';
 import TravelAwards from './Awards';
-import TravelPodcasts from './Podcasts';
-import TravelArticles from './Articles';
+
+const ExpeditionGlobe = lazy(() => import('./ExpeditionGlobe'));
 
 export default function TravelPage() {
   return (
-    <section className="py-16 md:py-22 bg-surface-dim">
+    <section id="travel" className="py-16 md:py-22 bg-surface-dim">
       <div className="max-w-7xl mx-auto px-5 sm:px-8 lg:px-12">
         <SectionHeading
           title="Travel & Adventure"
@@ -16,13 +16,11 @@ export default function TravelPage() {
         />
         <MawaCollective />
         <TechVineDivider />
-        <Athletics />
+        <Suspense fallback={<div className="h-96 flex items-center justify-center text-on-surface-muted">Loading globe...</div>}>
+          <ExpeditionGlobe />
+        </Suspense>
         <TechVineDivider />
         <TravelAwards />
-        <TechVineDivider />
-        <TravelPodcasts />
-        <TechVineDivider />
-        <TravelArticles />
       </div>
     </section>
   );

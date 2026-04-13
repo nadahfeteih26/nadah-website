@@ -34,6 +34,11 @@
   --font-body: 'Manrope', sans-serif;
 }
 
+@keyframes marquee {
+  0% { transform: translateX(0); }
+  100% { transform: translateX(-50%); }
+}
+
 @layer base {
   body {
     font-family: var(--font-body);
@@ -46,5 +51,14 @@
   ::selection {
     background-color: var(--color-secondary);
     color: var(--color-primary);
+  }
+}
+
+@layer utilities {
+  .animate-marquee {
+    animation: marquee linear infinite;
+  }
+  .pause {
+    animation-play-state: paused;
   }
 }

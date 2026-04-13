@@ -2,8 +2,8 @@ export const mawaData = {
   title: "Ma'wa Collective",
   role: 'Founder & CEO',
   description:
-    "Ma'wa Collective creates transformative outdoor experiences for Muslim women, building community and confidence through adventure. From guided hikes to mountaineering expeditions, we're redefining who belongs in the outdoors.",
-  url: '#',
+    "Built and scaled the largest adventure travel company serving Muslims. In two years, led 65+ domestic and international trips with 1,000+ participants and grew a global community to 60K+ across social platforms. Built and managed a team of 15 women across trip leadership, operations, and marketing. Featured in Outside Magazine, REI's Wild Ideas Worth Living, Condé Nast Traveler, and Vogue Arabia.",
+  url: 'https://www.mawacollective.com/',
 };
 
 export const athleticsData = {

@@ -2,8 +2,8 @@ import { useState, useEffect } from 'react';
 import { motion, AnimatePresence } from 'framer-motion';
 
 const navLinks = [
-  { label: 'Tech', href: '#work' },
-  { label: 'Travel', href: '#work' },
+  { label: 'Tech', href: '#tech' },
+  { label: 'Travel', href: '#travel' },
 ];
 
 export default function Navbar() {
@@ -24,30 +24,38 @@ export default function Navbar() {
           : 'bg-transparent'
       }`}
     >
-      <div className="max-w-7xl mx-auto px-5 sm:px-8 lg:px-12 flex items-center justify-between h-16 md:h-20">
+      <div className="max-w-7xl mx-auto px-5 sm:px-8 lg:px-12 grid grid-cols-3 items-center h-16 md:h-20">
         <a
           href="#hero"
-          className="font-heading text-xl md:text-2xl text-on-surface hover:text-primary-container transition-colors"
+          className={`font-heading text-xl md:text-2xl transition-colors ${
+            scrolled ? 'text-primary hover:text-primary/70' : 'text-white hover:text-white/80'
+          }`}
         >
           Nadah Feteih
         </a>
 
-        {/* Desktop nav */}
-        <div className="hidden md:flex items-center gap-8">
+        {/* Desktop nav — centered */}
+        <div className="hidden md:flex items-center justify-center gap-10">
           {navLinks.map((link) => (
             <a
               key={link.label}
               href={link.href}
-              className="text-sm font-medium text-on-surface-muted hover:text-primary transition-colors"
+              className={`text-lg font-medium transition-colors ${
+                scrolled ? 'text-primary hover:text-primary/70' : 'text-white hover:text-white/70'
+              }`}
             >
               {link.label}
             </a>
           ))}
+        </div>
+
+        {/* Right side — CTA */}
+        <div className="hidden md:flex justify-end">
           <a
-            href="mailto:nadah@hey.com"
+            href="#connect"
             className="px-6 py-2.5 bg-primary text-on-primary text-sm font-medium rounded-md hover:bg-primary-container transition-colors"
           >
-            Let's Chat
+            Let's Connect
           </a>
         </div>
 
@@ -93,11 +101,11 @@ export default function Navbar() {
                 </a>
               ))}
               <a
-                href="mailto:nadah@hey.com"
+                href="#connect"
                 onClick={() => setMobileOpen(false)}
                 className="mt-2 px-6 py-3 bg-primary text-on-primary text-center font-medium rounded-md hover:bg-primary-container transition-colors"
               >
-                Let's Chat
+                Let's Connect
               </a>
             </div>
           </motion.div>
